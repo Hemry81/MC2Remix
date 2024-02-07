@@ -1,0 +1,18 @@
+#usda 1.0
+(
+    customLayerData = {
+        string lightspeed_game_name = "Midnight Club II"
+        string lightspeed_layer_type = "replacement"
+    }
+    subLayers = [
+        @./Sky.usda@,
+        @./Cars.usda@,
+        @./Effects.usda@,
+        @./Light.usda@,
+        @./Wall.usda@,
+        @./Road.usda@
+    ]
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+

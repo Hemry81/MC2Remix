@@ -1,0 +1,182 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+over "RootNode"
+{
+    over "instances"
+    {
+        over "inst_938DC8A3C4C08A11_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EAEF2569CD683096_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3CD38F2A69F6D117_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E644B1E4B2FF4BCD_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4784236CEDC58ADC_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_57CF7D22E7708292_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9A8CD3C28282D134_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B7E2423751225F02_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_33A561EE26E3C533_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A436DFE61100210E_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C18D1EFE515AD99C_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8D0FB3E7EB62F15D_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F21AE649A046CCFB_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3504CC2ABBA7DF23_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3663D0EEABABFC50_0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_33A561EE26E3C533_1"
+        {
+        }
+
+        over "inst_9A8CD3C28282D134_1"
+        {
+        }
+
+        over "inst_33A561EE26E3C533_2"
+        {
+        }
+
+        over "inst_9A8CD3C28282D134_2"
+        {
+        }
+
+        over "inst_F21AE649A046CCFB_1"
+        {
+        }
+
+        over "inst_C18D1EFE515AD99C_1"
+        {
+        }
+
+        over "inst_B7E2423751225F02_2"
+        {
+        }
+
+        over "inst_B7E2423751225F02_1"
+        {
+        }
+
+        over "inst_8D0FB3E7EB62F15D_1"
+        {
+        }
+    }
+}
+

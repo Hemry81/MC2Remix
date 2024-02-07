@@ -1,0 +1,186 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_C57865572FA46DCF" (
+            delete references = @./deps/captures/meshes/mesh_C57865572FA46DCF.usd@</mesh_C57865572FA46DCF>
+        )
+        {
+        }
+
+        over "mesh_22AEBF8212DF8724" (
+            delete references = @./deps/captures/meshes/mesh_22AEBF8212DF8724.usd@</mesh_22AEBF8212DF8724>
+        )
+        {
+        }
+
+        over "mesh_CB599FCC71AE5FCF" (
+            delete references = @./deps/captures/meshes/mesh_CB599FCC71AE5FCF.usd@</mesh_CB599FCC71AE5FCF>
+        )
+        {
+        }
+
+        over "mesh_BDE43F37BB0F3FF8" (
+            delete references = @./deps/captures/meshes/mesh_BDE43F37BB0F3FF8.usd@</mesh_BDE43F37BB0F3FF8>
+        )
+        {
+        }
+
+        over "mesh_0870CA0F98C89763" (
+            delete references = @./deps/captures/meshes/mesh_0870CA0F98C89763.usd@</mesh_0870CA0F98C89763>
+        )
+        {
+        }
+
+        over "mesh_D857C82064AA38E7" (
+            delete references = @./deps/captures/meshes/mesh_D857C82064AA38E7.usd@</mesh_D857C82064AA38E7>
+        )
+        {
+        }
+
+        over "mesh_65D3790BB637B391" (
+            delete references = @./deps/captures/meshes/mesh_65D3790BB637B391.usd@</mesh_65D3790BB637B391>
+        )
+        {
+        }
+
+        over "mesh_C526FE71FFB533AF"
+        {
+            def Xform "Arrow" (
+                prepend references = @./meshes/Effect/Arrow.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_350C6D1841DA52BF"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Effect/Arrow_BaseColor.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 1 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/Effect/Arrow_Emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:metallic_constant = 1 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./textures/Effect/Arrow_Normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.5 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Effect/Arrow_Roughness.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+    }
+}
+
