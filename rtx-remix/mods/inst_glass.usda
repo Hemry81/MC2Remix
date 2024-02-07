@@ -142,40 +142,94 @@ over "RootNode"
             )
         }
 
-        over "inst_33A561EE26E3C533_1"
+        over "inst_8D0FB3E7EB62F15D_1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_9A8CD3C28282D134_1"
+        over "inst_C18D1EFE515AD99C_1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_33A561EE26E3C533_2"
+        over "inst_B7E2423751225F02_1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_9A8CD3C28282D134_2"
+        over "inst_33A561EE26E3C533_1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_F21AE649A046CCFB_1"
+        over "inst_9A8CD3C28282D134_1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_C18D1EFE515AD99C_1"
+        over "inst_F21AE649A046CCFB_1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_B7E2423751225F02_2"
+        over "inst_B7E2423751225F02_2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_B7E2423751225F02_1"
+        over "inst_33A561EE26E3C533_2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
 
-        over "inst_8D0FB3E7EB62F15D_1"
+        over "inst_9A8CD3C28282D134_2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A436DFE61100210E_2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
         }
     }
 }
