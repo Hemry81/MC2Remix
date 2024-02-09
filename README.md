@@ -1,6 +1,14 @@
 # MC2Remix
 Midnight Club 2 Remix Projects
 
+# Additional Setup :
+**You will need to manually edit the "options.cfg" file located inside the "game folder/userdata" directory. Make the necessary adjustments to the following parameters:**
+ - Modify **ScreenWidth** and **ScreenHeight** values to match your desired screen resolution
+ - DrawDistance: 2000**
+ - EnvironmentMapping: 1
+ - Reflections: 1
+ - Shadows: 0
+
 # Mod Installation :
 Follow these steps to install the MC2 RTX-Remix mod:
 
