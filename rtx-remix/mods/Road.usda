@@ -67,6 +67,36 @@ over "RootNode"
             }
         }
 
+        over "mat_E9ABF86A2603D611"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Roads/E9ABF86A2603D611.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
         over "mat_8A12F809F296047E"
         {
             over "Shader"
@@ -774,6 +804,126 @@ This parameter is unused.
                     displayGroup = "Base Material"
                     displayName = "Roughness Map"
                     doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_63A67A4A53CCA19A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Roads/63A67A4A53CCA19A.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_61E0B0E2E1073E60"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Roads/61E0B0E2E1073E60.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_0FB35A61BD1C7CF3"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Roads/0FB35A61BD1C7CF3.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_237222506B6852B7"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Roads/237222506B6852B7.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
                     hidden = false
