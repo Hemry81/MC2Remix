@@ -83,7 +83,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-4.200000062584877, 8.800000131130219, 0)
+                double3 xformOp:translate = (-4.200000062584877, 9, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -110,7 +110,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-4.200000062584877, 8.800000131130219, 0)
+                double3 xformOp:translate = (-4.200000062584877, 9, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -136,7 +136,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (4.700000070035458, 8.700000129640102, 0)
+                double3 xformOp:translate = (4.700000070035458, 8.8, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -157,7 +157,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-4.7, 8.700000129640102, 0)
+                double3 xformOp:translate = (-4.7, 8.8, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -183,7 +183,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (4.700000070035458, 8.700000129640102, 0)
+                double3 xformOp:translate = (4.700000070035458, 8.8, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -204,7 +204,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-4.7, 8.700000129640102, 0)
+                double3 xformOp:translate = (-4.7, 8.8, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
@@ -231,7 +231,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-4.200000062584877, 8.800000131130219, 0)
+                double3 xformOp:translate = (-4.200000062584877, 9, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

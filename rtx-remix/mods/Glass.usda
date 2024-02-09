@@ -12,7 +12,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -21,7 +21,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -30,7 +30,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -39,7 +39,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -48,7 +48,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -57,7 +57,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -66,7 +66,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -75,7 +75,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -84,7 +84,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -93,7 +93,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -102,7 +102,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -111,7 +111,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -120,7 +120,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -129,7 +129,7 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -138,7 +138,106 @@ over "RootNode"
         )
         {
             token visibility = "invisible"
-            rel material:binding = </Looks/Glass> (
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_0C0B4D965955EB59" (
+            references = @./meshes/cars/glass/mesh_0C0B4D965955EB59.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_C7100AA909BB6E37" (
+            references = @./meshes/cars/glass/mesh_C7100AA909BB6E37.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_12712767048EA478" (
+            references = @./meshes/cars/glass/mesh_12712767048EA478.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_EE2CEB6EDB09BDDE" (
+            references = @./meshes/cars/glass/mesh_EE2CEB6EDB09BDDE.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_450C9B5CEB7E98C5" (
+            references = @./meshes/cars/glass/mesh_450C9B5CEB7E98C5.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_09FFC0ED03E9804E" (
+            references = @./meshes/cars/glass/mesh_09FFC0ED03E9804E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_AB399B0770D1312E" (
+            references = @./meshes/cars/glass/mesh_AB399B0770D1312E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_16CA3D6B77ED5842" (
+            references = @./meshes/cars/glass/mesh_16CA3D6B77ED5842.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_BF875380DB79CE80" (
+            references = @./meshes/cars/glass/mesh_BF875380DB79CE80.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_9119D6E9BE8E86A6" (
+            references = @./meshes/cars/glass/mesh_9119D6E9BE8E86A6.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_448FBF09CECC1915" (
+            references = @./meshes/cars/glass/mesh_448FBF09CECC1915.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }

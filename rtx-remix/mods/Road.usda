@@ -87,13 +87,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/Roads/8B4E2F6DB39E17EA.dds@ (
+                asset inputs:diffuse_texture = @./textures/Roads/8B4E2F6DB39E17EA_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./textures/Roads/8B4E2F6DB39E17EA_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Roads/8B4E2F6DB39E17EA_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
 
 """
                     hidden = false
@@ -125,7 +148,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/Roads/9E45BFB87CBDFB31.dds@ (
+                asset inputs:diffuse_texture = @./textures/Roads/9E45BFB87CBDFB31_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -137,20 +160,24 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-            }
-        }
-
-        over "mat_35BAC2BFE873943F"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./textures/Roads/35BAC2BFE873943F.dds@ (
+                asset inputs:normalmap_texture = @./textures/Roads/9E45BFB87CBDFB31_normal.dds@ (
+                    colorSpace = "auto"
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Roads/9E45BFB87CBDFB31_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
 
 """
                     hidden = false
@@ -220,13 +247,78 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/Roads/9524F310352FCC92.dds@ (
+                asset inputs:diffuse_texture = @./textures/Roads/9524F310352FCC92_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./textures/Roads/9524F310352FCC92_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Roads/9524F310352FCC92_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_35BAC2BFE873943F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Roads/35BAC2BFE873943F_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./textures/Roads/35BAC2BFE873943F_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Roads/35BAC2BFE873943F_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
 
 """
                     hidden = false
@@ -296,13 +388,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/Roads/D5E1DBBBE860A11A.dds@ (
+                asset inputs:diffuse_texture = @./textures/Roads/D5E1DBBBE860A11A_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Base Material"
                     displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./textures/Roads/D5E1DBBBE860A11A_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Roads/D5E1DBBBE860A11A_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
 
 """
                     hidden = false

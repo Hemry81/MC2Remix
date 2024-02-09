@@ -17,7 +17,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (0.9150579, 1, 0.98938215)
-                float inputs:intensity = 200
+                float inputs:intensity = 300
                 float inputs:radius = 0.2
                 float inputs:shaping:cone:angle = 60
                 float inputs:shaping:cone:softness
@@ -42,7 +42,7 @@ over "RootNode"
             {
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 color3f inputs:color = (0.9150579, 1, 0.98938215)
-                float inputs:intensity = 200
+                float inputs:intensity = 300
                 float inputs:radius = 0.2
                 float inputs:shaping:cone:angle = 60
                 float inputs:shaping:cone:softness
@@ -134,6 +134,30 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (-60, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -0.20000000298023224, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_795688ED344EC1A3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Sphere_Prop_Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                bool inputs:enableColorTemperature = 0
+                float inputs:intensity = 100
+                float inputs:radius = 0.3
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

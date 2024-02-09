@@ -1,5 +1,9 @@
 #usda 1.0
 (
+    subLayers = [
+        @./Traffic_headlight.usda@,
+        @./Player_car_headlight.usda@
+    ]
     upAxis = "Y"
 )
 

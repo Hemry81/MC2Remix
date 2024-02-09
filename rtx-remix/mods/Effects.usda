@@ -181,6 +181,226 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_720689BACE9FBAED"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Effect/Spark_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 10 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./textures/Effect/Spark_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_FB68B1BF0EF192A8"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Effect/Smoke_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+    }
+}
+
+def "Looks"
+{
+    def Material "SpotLight"
+    {
+        token outputs:mdl:displacement.connect = </Looks/SpotLight/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/SpotLight/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/SpotLight/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @./textures/Effect/SpotLight_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:emissive_color_constant = (1, 0.99999, 0.99999) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 5 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_thin_film = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Iridescence"
+                displayName = "Enable Iridescence"
+                doc = """Adds a thin film coating to the material
+
+"""
+                hidden = false
+            )
+            float inputs:opacity_constant = 1 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Opacity Amount"
+                doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 1 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Iridescence"
+                displayName = "Use Opacity as Thickness"
+                doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
     }
 }
 
