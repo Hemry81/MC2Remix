@@ -39,5 +39,31 @@ Follow these steps to install the MC2 RTX-Remix mod:
 
     **7**. Copy all the cloned files to your game folder.
 
+# Known Issue :
+ - The game crashes when changing scenes (such as when finishing a race and the progress is autosaved) or when restarting the race from a point far away from the starting point.
+
 Let's RTX:
 Launch Midnight Club 2 with the RTX enhancements and enjoy the enhanced visuals.
+
+**Please note that any additional mods may cause conflicts and potentially break our mod. We strongly advise against installing any other mods unless you have a thorough understanding of their compatibility and potential effects.**
+
+# Contributing
+- We welcome contributions from the community! If you have any improvements or suggestions for the MC2 RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
+
+# Community Guidelines
+To maintain a healthy and constructive environment, we kindly ask all community members to adhere to the following guidelines:
+
+- Be respectful and considerate towards fellow members.
+- Provide clear and concise communication.
+- Avoid spamming or posting unrelated content.
+- Report any issues or concerns to the community moderators.
+
+# License
+The MC2 RTX-Remix Project operates under the MIT License. Please review the license file for more details.
+
+# Contact
+For any questions or inquiries, feel free to contact the project administrators at Discord [Hemry](https://discordapp.com/users/hemry).
+
+# News and Progress update
+- RTX Remix Discord Channel : [RTX Remix Discord Channel](https://discord.gg/rtxremix).
+- MC2 Remix Discord Group: [RTX-Remix MC2 Discord Group](https://discord.com/channels/1028444667789967381/1203162776932196352).
