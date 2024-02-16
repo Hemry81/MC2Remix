@@ -1,5 +1,13 @@
 # MC2Remix
-Midnight Club 2 Remix Projects
+Welcome to the Midnight Club 2 Remix Projects! ! This project is dedicated to enhancing the Midnight Club 2 gameplay experience through the integration of RTX technology. Join our community of modders and enthusiasts as we bring stunning visual upgrades to the world of Midnight Club 2.
+
+# Requirements
+To get started with the MC2 RTX-Remix Project, ensure that you have the following:
+
+- **Midnight Club 2 Game**: Make sure you have a legally obtained copy of Midnight Club 2 installed on your computer.
+- **RTX-Compatible Graphics Card**: You'll need an NVIDIA RTX series graphics card to take full advantage of the RTX enhancements.
+- **RTX-Remix**: Get the latest version of RTX-Remix runtime from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab.
+- You can use [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) to download and update to lastest version of RTX-Remix). Here is the original Github page of the tool : [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader)
 
 # Additional Setup :
 **You will need to manually edit the "options.cfg" file located inside the "game folder/userdata" directory. Make the necessary adjustments to the following parameters:**
