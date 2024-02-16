@@ -1,0 +1,4869 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_754ED95D5B0C6C2F"
+        {
+            over "Shader"
+            {
+                float inputs:alpha_test_reference_value = 0 (
+                    customData = {
+                        float default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Reference Value"
+                    doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                int inputs:alpha_test_type = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Type"
+                    doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                bool inputs:blend_enabled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Enabled"
+                    doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                    hidden = false
+                )
+                int inputs:blend_type = 1 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Type"
+                    doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "BlendType"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "Alpha"
+                        string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                    }
+                )
+                asset inputs:diffuse_texture = @../textures/Neon_Lights/754ED95D5B0C6C2F_albedo.dds@
+                float inputs:emissive_intensity = 2 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../textures/Neon_Lights/754ED95D5B0C6C2F_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Iridescence"
+                    displayName = "Enable Iridescence"
+                    doc = """Adds a thin film coating to the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:inverted_blend = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Inverted Blend"
+                    doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Iridescence"
+                    displayName = "Use Opacity as Thickness"
+                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
+
+"""
+                    hidden = false
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_427BD957E132C9D6"
+        {
+            over "Shader"
+            {
+                float inputs:alpha_test_reference_value = 0 (
+                    customData = {
+                        float default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Reference Value"
+                    doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                int inputs:alpha_test_type = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Type"
+                    doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                bool inputs:blend_enabled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Enabled"
+                    doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                    hidden = false
+                )
+                int inputs:blend_type = 1 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Type"
+                    doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "BlendType"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "Alpha"
+                        string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                    }
+                )
+                asset inputs:diffuse_texture = @../textures/Neon_Lights/427BD957E132C9D6_albedo.dds@
+                float inputs:emissive_intensity = 2 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../textures/Neon_Lights/427BD957E132C9D6_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Iridescence"
+                    displayName = "Enable Iridescence"
+                    doc = """Adds a thin film coating to the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:inverted_blend = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Inverted Blend"
+                    doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Iridescence"
+                    displayName = "Use Opacity as Thickness"
+                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
+
+"""
+                    hidden = false
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_C1527119EA9DA8AB"
+        {
+            over "Shader"
+            {
+                float inputs:alpha_test_reference_value = 0 (
+                    customData = {
+                        float default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Reference Value"
+                    doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                int inputs:alpha_test_type = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Type"
+                    doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "AlphaTestType"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "Always"
+                        string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                    }
+                )
+                bool inputs:blend_enabled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Enabled"
+                    doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                    hidden = false
+                )
+                int inputs:blend_type = 1 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Type"
+                    doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "BlendType"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "Alpha"
+                        string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                    }
+                )
+                asset inputs:diffuse_texture = @../textures/Neon_Lights/C1527119EA9DA8AB_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 2 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../textures/Neon_Lights/C1527119EA9DA8AB_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:inverted_blend = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Inverted Blend"
+                    doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_A3D293CE2D0593F9"
+        {
+            over "Shader"
+            {
+                float inputs:alpha_test_reference_value = 0 (
+                    customData = {
+                        float default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Reference Value"
+                    doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                int inputs:alpha_test_type = 0 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Alpha Test Type"
+                    doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                bool inputs:blend_enabled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Enabled"
+                    doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                    hidden = false
+                )
+                int inputs:blend_type = 1 (
+                    customData = {
+                        int default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Blend Type"
+                    doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "BlendType"
+                    sdrMetadata = {
+                        string __SDR__enum_value = "Alpha"
+                        string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                    }
+                )
+                asset inputs:diffuse_texture = @../textures/Neon_Lights/A3D293CE2D0593F9_albedo.dds@
+                float inputs:emissive_intensity = 2 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../textures/Neon_Lights/A3D293CE2D0593F9_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emission"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:inverted_blend = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Inverted Blend"
+                    doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_legacy_alpha_state = 0 (
+                    customData = {
+                        bool default = 1
+                    }
+                    displayGroup = "Alpha Blending"
+                    displayName = "Use Legacy Alpha State"
+                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                    hidden = false
+                )
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_406572A42BC585CE"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (1, 0.25, 0.25)
+                float inputs:intensity = 2500
+                float inputs:radius = 0.1
+                float inputs:shaping:cone:angle = 60
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (59.99999999999977, 94.0872147925308, -1.7053025658242404e-13)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1299.2000293345513, 0.3186180202019389, 378.7694389750064)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (0.25, 1, 0.25)
+                float inputs:intensity = 2500
+                float inputs:radius = 0.1
+                float inputs:shaping:cone:angle = 60
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (59.99999999999977, 94.0872147925308, -1.7053025658242404e-13)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1299.4655469585837, 0.3186180202100145, 375.05365054091953)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (0.25, 0.25000072, 1)
+                float inputs:intensity = 2500
+                float inputs:radius = 0.1
+                float inputs:shaping:cone:angle = 60
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (59.99999999999977, 94.0872147925308, -1.7053025658242404e-13)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1299.7619477481276, 0.3186180202232707, 370.90566740930154)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_736561045D4CD7A8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Base" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Base.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Structure" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Structure.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Glass" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Glass.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Light_only" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light_only.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        def "mesh_84278D665B1A0633"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.32156864) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.32156864)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.32156864)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_118C2DA94F4C4107"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.41960785) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.41960785)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.41960785)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7D4757C16791A1BC"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.54901963) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.54901963)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.54901963)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_D7CABF2CA96681F7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.64705884) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.64705884)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.64705884)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_8BE3BC2D778C7E9D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.6509804, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.6509804, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.6509804, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_4D2108FECE59CF13"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.5882353, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.5882353, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.5882353, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_791735E0DEDD6B09"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.5254902, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.5254902, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.5254902, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7B5B42587DF5C25D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.39607844, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.39607844, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.39607844, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_C2B109FD9F8548D1"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.25882354, 0.31764707, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.25882354, 0.31764707, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.25882354, 0.31764707, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_A2FF1A3E77A78918"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.2901961, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.2901961, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.2901961, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_65C55EB70D55BD58"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.3529412, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.3529412, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.3529412, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_43AB4EADDC84CF4A"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.41960785, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.41960785, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.41960785, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_0464CF1E3AC48672"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color = (0.4509804, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emission color
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.4509804, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (0.2, 0.2, 0.2)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Base Material"
+                                displayName = "Albedo Color"
+                                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            color3f inputs:emissive_color_constant = (0.4509804, 0.25490198, 0.70980394) (
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_695389DFC07E4F81"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.5176471, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.5176471, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.5176471, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_C45D6F059AB1C78F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.64705884, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.64705884, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.64705884, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_EC69F36846AE02E7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_70E67FB0BB136170"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.6117647) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.6117647)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.6117647)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_ACFF94DBC2C30C7F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.5176471) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.5176471)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.5176471)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_18904453F6C16A1D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.3882353) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.3882353)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.3882353)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_905B57600B4222AD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.32156864) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.32156864)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.32156864)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_BEF69E6D0F6F8F53"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.25882354) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.25882354)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.25882354)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_28581DF74E821510"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.3019608, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.3019608, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.3019608, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_CC71B2454B6B9DD2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.3647059, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.3647059, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.3647059, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7E80DA5E1020C24E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.49019608, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.49019608, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.49019608, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_B6823B96A84E8B64"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.5411765, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.5411765, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.5411765, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_BBB3C9BB094DA28A"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.6666667, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.6666667, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.6666667, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_A3F4CDD256A56F57"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.64705884, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.64705884, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.64705884, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_BEEC0FB79541650E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.5803922, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.5803922, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.5803922, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_71132D6934D56601"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.5176471, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.5176471, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.5176471, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_FB185CEA0D97AC27"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.4509804, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.4509804, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.4509804, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_8B9AB4B3579B48EA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.3882353, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.3882353, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.3882353, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_145EEE066F249D10"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.25882354, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.25882354, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.25882354, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_27521C7BE0608E80"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.22745098, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.22745098, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.22745098, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_58B7A859CAFD1EE9"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.25882354) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.25882354)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.25882354)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_4C3945FBDDD2686D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.3882353) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.3882353)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.3882353)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_8A90A9E031423C54"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.48235294) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.48235294)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.48235294)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_A9A6E290A0178999"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.6117647) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.68235296, 0.6117647)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.68235296, 0.6117647)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_5A2D390540AE26A7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.45882353, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.45882353, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.45882353, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_746D7EC5E2F5255E"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.34901962, 0.6784314) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.19215687, 0.34901962, 0.6784314)
+                            color3f inputs:emissive_color_constant = (0.19215687, 0.34901962, 0.6784314)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_B0060231A092BD42"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.25882354, 0.27058825, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.25882354, 0.27058825, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.25882354, 0.27058825, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_D579533F2BFABDA0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.5803922, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.5803922, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.5803922, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7E4A701F159764A2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.70980394) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.70980394)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.70980394)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_70161EA79D513D3C"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.54901963) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.54901963)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.54901963)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_E58ADC83DF56FDA2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.4509804) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.70980394, 0.25490198, 0.4509804)
+                            color3f inputs:emissive_color_constant = (0.70980394, 0.25490198, 0.4509804)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_95CFC6673CCC62B7"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.42745098, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.42745098, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.42745098, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_C1196EFC67A2102D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.3529412, 0.68235296, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.3529412, 0.68235296, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.3529412, 0.68235296, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+
+        over "mesh_7FABF69FC3E10ECF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "body" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Body.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Neon_Body"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.25490198, 0.19215687) (
+                                customData = {
+                                    float3 default = (1, 0.1, 0.1)
+                                    dictionary range = {
+                                        float3 max = (1, 1, 1)
+                                        float3 min = (0, 0, 0)
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Color"
+                                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                                hidden = false
+                                renderType = "color"
+                            )
+                            float inputs:emissive_intensity = 0.5 (
+                                customData = {
+                                    float default = 40
+                                    dictionary range = {
+                                        float max = 65504
+                                        float min = 0
+                                    }
+                                }
+                                displayGroup = "Emission"
+                                displayName = "Emissive Intensity"
+                                doc = """Intensity of the emission
+
+"""
+                                hidden = false
+                            )
+                            bool inputs:enable_emission = 1 (
+                                doc = """Enables the emission of light from the material
+
+"""
+                                hidden = false
+                            )
+                        }
+                    }
+                }
+            }
+
+            def Xform "light" (
+                references = @../meshes/Buildings/Neon_Column/Neon_Light.usda@
+            )
+            {
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Looks"
+                {
+                    over "Light"
+                    {
+                        over "Shader"
+                        {
+                            color3f inputs:diffuse_color_constant = (0.6784314, 0.25490198, 0.19215687)
+                            color3f inputs:emissive_color_constant = (0.6784314, 0.25490198, 0.19215687)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

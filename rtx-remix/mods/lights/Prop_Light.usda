@@ -7,31 +7,6 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_76197E3E0F5B33DE"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Prop_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                color3f inputs:color = (0.9150579, 1, 0.98938215)
-                float inputs:intensity = 300
-                float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 60
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (-90, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.25, -0.2, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
         over "mesh_A0C226D0C1382B01"
         {
             custom int preserveOriginalDrawCall = 1
@@ -158,6 +133,31 @@ over "RootNode"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_76197E3E0F5B33DE"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Prop_Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                color3f inputs:color = (0.94523036, 1, 0.9150579)
+                float inputs:intensity = 300
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 60
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.25, -0.2, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }

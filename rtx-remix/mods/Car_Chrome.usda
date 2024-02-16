@@ -1,0 +1,154 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    upAxis = "Y"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_5CECE1125641A52E" (
+            references = @./meshes/cars/chrome/mesh_5CECE1125641A52E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_E4571D7F7BE5E8E3" (
+            references = @./meshes/cars/chrome/mesh_E4571D7F7BE5E8E3.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_D35A8EE8983C1E7A" (
+            references = @./meshes/cars/chrome/mesh_D35A8EE8983C1E7A.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Mirror> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_1179FF1365F214FD" (
+            references = @./meshes/cars/chrome/mesh_1179FF1365F214FD.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_53C82AF4A3D4266B" (
+            references = @./meshes/cars/chrome/mesh_53C82AF4A3D4266B.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_10248F7DC7A9DA65" (
+            references = @./meshes/cars/chrome/mesh_10248F7DC7A9DA65.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_DF022073B3840041" (
+            references = @./meshes/cars/chrome/mesh_DF022073B3840041.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_B64DB43FCA6008B0" (
+            references = @./meshes/cars/chrome/mesh_B64DB43FCA6008B0.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_84CF6F64596F743A" (
+            references = @./meshes/cars/chrome/mesh_84CF6F64596F743A.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_34EFB9BB4C5696DD" (
+            references = @./meshes/cars/chrome/mesh_34EFB9BB4C5696DD.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_ECC32C4AF95B3366" (
+            references = @./meshes/cars/chrome/mesh_ECC32C4AF95B3366.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_7E0CA26B54977ABF" (
+            references = @./meshes/cars/chrome/mesh_7E0CA26B54977ABF.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_C28B93940CBBF618" (
+            references = @./meshes/cars/chrome/mesh_C28B93940CBBF618.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_831E44EB67A01D6E" (
+            references = @./meshes/cars/chrome/mesh_831E44EB67A01D6E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_09EECFDC3AA41F98" (
+            references = @./meshes/cars/chrome/mesh_09EECFDC3AA41F98.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Chrome> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+    }
+}

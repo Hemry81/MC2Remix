@@ -5,12 +5,14 @@
         string lightspeed_layer_type = "replacement"
     }
     subLayers = [
+        @./Props.usda@,
+        @./Buildings.usda@,
         @./Sky.usda@,
         @./Cars.usda@,
         @./Effects.usda@,
         @./Light.usda@,
-        @./Wall.usda@,
-        @./Road.usda@
+        @./Road.usda@,
+        @./Wall.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Y"

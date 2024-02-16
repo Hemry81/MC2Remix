@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./lights/Neon_Lights.usda@,
         @./lights/Prop_Light.usda@,
         @./Lights/Street_Light.usda@
     ]

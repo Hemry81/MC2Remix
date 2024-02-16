@@ -7,11 +7,11 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_2296D2496EB575AA"
+        over "mat_F2903048203F44D0"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./textures/Wall/2296D2496EB575AA.dds@ (
+                asset inputs:diffuse_texture = @./textures/Wall/BricksSubstance003_a_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -23,16 +23,126 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:use_legacy_alpha_state = 0 (
+                float inputs:displace_in = 0.005 (
                     customData = {
-                        bool default = 1
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
                     }
-                    displayGroup = "Alpha Blending"
-                    displayName = "Use Legacy Alpha State"
-                    doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @./textures/Wall/BricksSubstance003_a_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./textures/Wall/BricksSubstance003_a_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Wall/BricksSubstance003_a_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
 
 """
                     hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_E46340BBD2383467"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./textures/Wall/BricksSubstance003_a_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:displace_in = 0.005 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @./textures/Wall/BricksSubstance003_a_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./textures/Wall/BricksSubstance003_a_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./textures/Wall/BricksSubstance003_a_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }

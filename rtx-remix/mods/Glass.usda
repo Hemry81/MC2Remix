@@ -241,5 +241,59 @@ over "RootNode"
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
+        over "mesh_B473E7A7E69D013E" (
+            references = @./meshes/cars/glass/mesh_B473E7A7E69D013E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_624082B47C1D77AF" (
+            references = @./meshes/cars/glass/mesh_624082B47C1D77AF.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_EA0CDB1263144F9E" (
+            references = @./meshes/cars/glass/mesh_EA0CDB1263144F9E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_F975B131C8400C93" (
+            references = @./meshes/cars/glass/mesh_F975B131C8400C93.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_ED4D3FBE22E7510E" (
+            references = @./meshes/cars/glass/mesh_ED4D3FBE22E7510E.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_AAA71AF4348E2139" (
+            references = @./meshes/cars/glass/mesh_AAA71AF4348E2139.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </Looks/Car_Window> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
     }
 }
