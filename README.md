@@ -1,4 +1,4 @@
-# MC2Remix
+# MC2 Remix
 Welcome to the Midnight Club 2 Remix Projects! ! This project is dedicated to enhancing the Midnight Club 2 gameplay experience through the integration of RTX technology. Join our community of modders and enthusiasts as we bring stunning visual upgrades to the world of Midnight Club 2.
 
 ![Splash](https://github.com/Hemry81/MC2Remix/blob/main/MC2_Remix.png)
